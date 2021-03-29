@@ -150,7 +150,7 @@ Writing a Dockerfile is the first step to containerizing an application. You can
 
     %docker run -dp 3000:3000 getting-started
 - -d command tells docker to run the command in the detached mode. You can also explicitly type --detach
-- -p tells the port mapping information. The port of the left is the port on your computer and the port on the right is the port on the container. 
+- -p is for publishing ports. The port of the left is the port on your computer and the port on the right is the port on the container. 
 - You could also give a name to your container using --name option, Its optional.
 
 11> Voila! You did the following:
