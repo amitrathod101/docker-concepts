@@ -65,7 +65,8 @@ Now that we have the image pulled to your laptop, let's run the image in a docke
 
 This command runs the ubuntu image in a container in "interactive" mode and opens a "bash" shell into the container.
 
-    % docker run -it ubuntu bash root@364d57dac987:/#
+    % docker run -it ubuntu bash 
+    root@364d57dac987:/#
 
 You can now try out basic linux commands in the shell. Note the change in your prompt.
 
@@ -88,7 +89,7 @@ You should see the running container shown in the command.
 
     % cd /Users/<your username>/github.com/<your username>
 
-4> Fork this project, from github into your account and then clone it to your laptop :https://github.com/amitrathod101/getting-started
+4> Fork this project, from github into your account and then clone it to your laptop :https://github.com/amitrathod101/getting-started . Note that your command will have your github id. Here's waht I did on my laptop.
 
     %git clone git@github.com:amitrathod101/getting-started.git
 
@@ -159,7 +160,7 @@ Writing a Dockerfile is the first step to containerizing an application. You can
 - Built a Docker Image
 - Created a contanier from the Docker Image!!
 
-12> Now open a tab on your browser and copy this link, you should be able to add items in the to-do list. Make sure it is working by adding things in it, checking it or even deleting it. 
+12> Now open a tab on your browser and copy this link, you should be able to add items in the to-do list. Make sure it is working by adding things in it, checking it or even deleting it(I meant on the to do list!). 
 
      http://localhost:3000/
 
@@ -171,7 +172,7 @@ Writing a Dockerfile is the first step to containerizing an application. You can
 
     % docker image ls
 
-15> Before we push it to your docker account account, you will have to tag it. Running without the tag results in a tag called latest. 
+15> Before we push it to your docker account account, you will have to tag it. Running without the tag results in a tag called latest. Not the best when running in production, but its okay, we are learning it for the first time. 
 
     % docker tag getting-started your_dockerhub_id/getting-started
  
